@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Mental Universitaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MindCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Crear Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion nosotros -->
+    <div class="container">
+        <h2 class="text-center">Nosotros</h2>
+        <p class="text-justify">El sistema MindCare es una plataforma web que pretende facilitar el acceso de atención
+            psicológica profesional a los estudiantes de la comunidad estudiantil de la Universidad de Guadalajara, así
+            como intentar fomentarla y darle un poco más de difusión. Esta plataforma cuenta con una página de inicio
+            donde
+            podrá encontrar información relevante acerca de la salud mental y la importancia del cuidado de esta,
+            además, podrá consultar la información de los psicólogos registrados con los que podrá agendar una cita una
+            vez registrado. Como usuario registrado tendrá acceso a agendar consultas remotas para atender de forma
+            inicial una necesidad mental.</p>
+    </div>
+
+    <!-- Sección de Artículos -->
+    <div class="container mt-5">
+        <h2 class="text-center">Artículos sobre Salud Mental</h2>
+        <div class="row">
+            <!-- Artículo 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/img/mh-1.jpeg" class="card-img-top" alt="Artículo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">5 Técnicas para Reducir el Estrés</h5>
+                        <p class="card-text">Descubre cómo gestionar el estrés durante la vida universitaria.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Artículo 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/img/mh-2.jpeg" class="card-img-top" alt="Artículo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mejora tu Bienestar Emocional</h5>
+                        <p class="card-text">Consejos para mejorar tu salud mental mientras estudias.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Artículo 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/img/mh-3.jpeg" class="card-img-top" alt="Artículo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Recursos Gratuitos</h5>
+                        <p class="card-text">Accede a recursos gratuitos para mejorar tu salud mental.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Artículos -->
+    <div class="container mt-5">
+        <h2 class="text-center">Medicos aliados</h2>
+        <!-- Carrusel con la semblanza del médico -->
+        <div id="medicoCarrusel" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/user-2.jpeg" class="rounded-circle" alt="Médico 1">
+                    </div>
+                    <div class="carousel-caption">
+                        <h5>Dr. Luis Garcia</h5>
+                        <p>Psicólogo y Coach en Bienestar Emocional.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/user-3.jpeg" class="rounded-circle" alt="Médico 2">
+                    </div>
+                    <div class="carousel-caption">
+                        <h5>Dra. Ana Martinez</h5>
+                        <p>Psicóloga Clínica Especialista en Terapia Cognitivo-Conductual.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/user-1.jpeg" class="rounded-circle" alt="Médico 2">
+                    </div>
+                    <div class="carousel-caption">
+                        <h5>Dra. Maria Perez</h5>
+                        <p>Psicóloga y Consejera en Salud Mental Estudiantil.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#medicoCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#medicoCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Dra. Ana Martinez
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-justify-"> <strong>Psicóloga Clínica Especialista en Terapia
+                            Cognitivo-Conductual.</strong>
+                        La Dra. Ana Martínez cuenta con más de 10 años de experiencia en el
+                        tratamiento de trastornos de ansiedad y depresión, enfocados en jóvenes adultos. Es experta en
+                        técnicas de terapia
+                        cognitivo-conductual, que han demostrado ser altamente efectivas en mejorar la salud mental de
+                        estudiantes universitarios. Su enfoque terapéutico se centra en proporcionar herramientas prácticas
+                        para manejar el estrés académico, la ansiedad social y el bienestar emocional.</div>
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/user-3.jpeg" class="rounded-circle" alt="Médico 1">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Dr. Luis Garcia
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-justify"> <strong>Psicólogo y Coach en Bienestar Emocional. </strong> El
+                        Dr. Luis García es un psicólogo con enfoque holístico en salud mental,
+                        especializado en el manejo del estrés y la productividad académica. Con formación en mindfulness y
+                        técnicas de relajación, ha trabajado con estudiantes para mejorar su concentración, reducir el
+                        agotamiento mental y fomentar hábitos de estudio saludables. Además, ha liderado talleres grupales
+                        de bienestar emocional en diversas universidades.
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/user-2.jpeg" class="rounded-circle" alt="Médico 1">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Dra. Maria Perez
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> <strong>Psicóloga y Consejera en Salud Mental Estudiantil. </strong> La
+                        Lic. María Pérez tiene más de 7 años de experiencia en el acompañamiento psicológico de estudiantes
+                        universitarios. Se especializa en el manejo de la ansiedad por rendimiento académico y apoyo
+                        emocional en la transición hacia la vida adulta. Ha trabajado en centros de salud mental en diversas
+                        universidades, ofreciendo tanto sesiones individuales como grupales, promoviendo una mejor calidad
+                        de vida estudiantil.
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/user-1.jpeg" class="rounded-circle" alt="Médico 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2024 MindCare
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
